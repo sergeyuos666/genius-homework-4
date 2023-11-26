@@ -1,0 +1,65 @@
+/* procedure_section */
+
+.procedure_section {
+  max-width: 1216px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+
+  &__cover_list {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 32px;
+    }
+
+    &__container{
+      overflow: hidden;
+    }
+
+    &__title{
+    font-size: 32px;
+      font-weight: 500;
+
+        @media screen and (min-width: $bp-desktop) {
+            font-size: 64px;
+              font-weight: 700;
+          }
+
+    }
+  
+    &__list {
+      display: flex;
+      gap: 16px;
+      margin-bottom: 20px;
+    }
+  
+    &__item {
+      max-width: 344px;
+      height: 416px;
+      transition: transform 0.3s;
+
+      @media screen and (min-width: $bp-desktop) {
+          max-width: 344px;
+        height: 456px;
+        }
+    }
+  
+    &__item:hover,
+    &__item:focus {
+      transform: scale(1.05);
+    }
+  
+  
+    &__button {
+
+      margin: 0 auto;
+      
+      
+      }
+    
+  
+    &__button.right {
+      transform: rotate(180deg);
+    }
+}
+

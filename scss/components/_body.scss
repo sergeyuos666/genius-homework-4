@@ -1,0 +1,25 @@
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+  line-height: 1.5;
+  font-family: Roboto;
+  font-size: var(--second-font-size);
+  font-weight: var(--main-font-weight);
+  color: var(--fourth-color-brand-black_blue);
+}
+
+.main_back_svg {
+  width: auto;
+  position: absolute;
+  top: 700px;
+  left: 0;
+  z-index: -999999;
+
+    @media screen and (min-width: $bp-desktop) {
+      top: 1400px;
+      }
+}
+
+.main {
+  position: relative;
+}

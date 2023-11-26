@@ -1,0 +1,192 @@
+.reincarnate_section {
+
+  @media screen and (min-width: $bp-desktop) {
+      min-height: 850px;
+    }
+
+  &__content_cover {
+      display: flex;
+      padding: 0 20px;
+    @media screen and (min-width: $bp-desktop) {
+          gap: 35px;
+          max-width: 1440px;
+      }
+
+    }
+  
+    &__first_cover {
+      width: auto;
+      flex-shrink: 1;
+  
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+
+
+      @media screen and (min-width: $bp-desktop) {
+          gap: 40px;
+        }
+    }
+  
+    &__title {
+      max-width: 264px;
+      font-size: 32px;
+      text-align: left;
+      line-height: 1.2;
+      margin-bottom: 8px;
+
+      @media screen and (min-width: $bp-desktop) {
+          font-size: 64px;
+          max-width: 529px;
+          margin-bottom: 48px;
+        }
+    }
+  
+    &__paragraph {
+      font-size: 18px;
+      line-height: 1.4;
+      font-weight: var(--main-font-weight);
+
+      @media screen and (min-width: $bp-desktop) {
+          font-size: 22px;
+        line-height: 1.72;
+        }
+    }
+  
+    &__second_cover {
+      display: none;
+  
+      @media screen and (min-width: $bp-desktop) {
+        display: block;
+        width: auto;
+        flex-shrink: 1;
+      }
+    }
+  
+    &__img_cover {
+      position: relative;
+      max-height: 700px;
+    }
+  
+    &__img {
+      position: absolute;
+      border-radius: 50%;
+    }
+
+    &__star_img_cover{
+      position: relative;
+    }
+  
+    &__img.first_star {
+      display: block;
+      top: 20px;
+      right: 20px;
+
+      @media screen and (min-width: $bp-desktop) {
+        display: none;
+        width: auto;
+        flex-shrink: 1;
+      }
+  
+    }
+  
+    &__img.first_img {
+      left: 0;
+      top: 0;
+    }
+  
+    &__img.second_img {
+      top: 373px;
+      left: 346px;
+    }
+  
+    &__star_blue_middel {
+      fill: var(--main-color-brand-blue);
+      top: 28px;
+      right: 21px;
+      position: absolute;
+  
+      animation-name: spinStar;
+      animation-duration: 3s;
+      animation-delay: 2s;
+      animation-timing-function: ease-in-out;
+      animation-iteration-count: infinite;
+    }
+  
+    @keyframes spinStar {
+      from {
+        transform: rotate(180deg);
+      }
+  
+      30% {
+        transform: scale(1.9);
+      }
+  
+      to {
+        transform: rotate(360deg);
+      }
+    }
+  
+    &__star_black_smal {
+      fill: var(--fourth-color-brand-black_blue);
+      top: 231px;
+      right: 64px;
+      position: absolute;
+  
+      animation-name: scaleStar;
+      animation-duration: 3s;
+      animation-delay: 2s;
+      animation-timing-function: ease-in-out;
+      animation-iteration-count: infinite;
+    }
+  
+    @keyframes scaleStar {
+      from {
+        transform: scale(1);
+      }
+  
+      30% {
+        transform: scale(1.4);
+      }
+  
+      to {
+        transform: scale(3);
+      }
+    }
+  
+    &__star_black_big {
+      top: 353px;
+      left: 280px;
+      fill: var(--fourth-color-brand-black_blue);
+      position: absolute;
+  
+      animation-name: skewStar;
+      animation-duration: 10s;
+      animation-delay: 10s;
+      animation-timing-function: ease-in-out;
+      animation-iteration-count: 2;
+    }
+  
+    @keyframes skewStar {
+      from {
+        transform: skew(0deg);
+      }
+  
+      30% {
+        transform: skew(10deg);
+      }
+  
+      50% {
+        transform: skew(20deg);
+      }
+  
+      80% {
+        transform: skew(300deg);
+      }
+  
+      to {
+        transform: skew(60deg);
+      }
+    }
+}
+

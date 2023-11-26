@@ -1,0 +1,108 @@
+/* .contacts_section  */
+.contacts_section{
+  &__content_cover {
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+      gap: 32px;
+
+      @media screen and (min-width: $bp-desktop) {
+      flex-direction: row;
+        }
+    }
+
+    &__title{
+      font-size: 32px;
+        font-weight: 500;
+        line-height: 1.2;
+        color: var(--third-color-brand-white);
+        margin-bottom: 24px;
+      
+        @media screen and (min-width: $bp-desktop) {
+          font-size: var(--second-font-size);
+          font-weight: var(--second-font-weight);
+          margin-bottom: 32px;
+        }
+    }
+  
+    &__map_cover {
+      border-radius: 32px;
+    }
+
+        &__map{
+          width: 428px;
+          height: 232px;
+          
+          @media screen and (min-width: $bp-desktop) {
+              width: 605px;
+              height: 480px;
+                border-radius: 32px;
+                border: 32px
+            }
+        }
+  
+    &__form_cover {
+      width: 320px;
+        height: 434px;
+      padding: 42px 24px;
+      display: flex;
+      flex-direction: column;
+      border-radius: 24px;
+      background: var(--fourth-color-brand-black_blue, #011c44);
+
+
+      @media screen and (min-width: $bp-desktop) {
+          padding: 48px 75px;
+          border-radius: 32px;
+          width: 423px;
+            height: 481px;
+        }
+    }
+  
+    &__form_title {
+      font-size: 22px;
+      font-weight: 600;
+      line-height: 1.2;
+      color: var(--third-color-brand-white);
+      margin-bottom: 24px;
+
+      @media screen and (min-width: $bp-desktop) {
+          margin-bottom: 32px;
+        }
+    }
+
+    &__politicks {
+          max-width: 213px;
+    
+          text-align: center;
+          font-size: 12px;
+          line-height: 1.5;
+          color: var(--second-color-brand-gray);
+        }
+    &__form_btn {
+        padding: 16px 24px;
+          margin-bottom: 8px;
+          border-radius: 24px;
+          width: 241px;
+            height: 44px;
+          font-family: Roboto;
+          font-size: 16px;
+    
+          font-weight: var(--second-font-weight);
+
+          @media screen and (min-width: $bp-desktop) {
+              padding: 16px 32px;
+              border-radius: 32px;
+              width: 281px;
+                height: 53px;
+                  font-size: var(--main-font-size);
+
+            }
+                        
+        }
+}
+
+
+
+

@@ -1,0 +1,29 @@
+.whi_we_card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 320px;
+  padding: 24px 32px;
+
+  border-radius: 32px;
+  background-color: var(--third-color-brand-white);
+  transition: transform 0.3s;
+
+
+
+  &__icon {
+    margin-bottom: 8px;
+    fill: var(--main-color-brand-blue);
+  }
+
+  &__item_description {
+    color: black;
+    font-size: var(--main-font-size);
+      line-height: 1.34;
+  }
+
+  font-size: var(--main-font-size);
+      line-height: 1.34;
+}
+

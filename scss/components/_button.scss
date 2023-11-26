@@ -1,0 +1,15 @@
+.btn {
+  background-color: var(--main-color-brand-blue);
+  padding: 16px 32px;
+  border-radius: 32px;
+  color: var(--third-color-brand-white, #fff);
+  border: transparent;
+  font-size: var(--main-font-size);
+  font-weight: var(--second-font-weight);
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: transparent;
+  border: 1px solid var(--main-color-brand-blue);
+}

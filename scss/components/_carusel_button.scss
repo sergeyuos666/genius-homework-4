@@ -1,0 +1,27 @@
+.carousel_button {
+ display: none;
+
+  @media screen and (min-width: $bp-desktop) {
+      
+    display: block;
+    display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    
+      border: 1px solid black;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background-color: transparent;
+      cursor: pointer;
+    }
+}
+
+.carousel_button:hover {
+  background-color: var(--main-black-color);
+}
+
+.carousel_button:hover .carousel_button__arrow {
+  stroke: var(--main-white-color);
+}

@@ -1,0 +1,97 @@
+/* hero section  */
+.hero_section {
+  background-image: url(../img/img_for_body/HERO_BG.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  
+  margin-bottom: 32px;
+
+
+    @media screen and (min-width: $bp-desktop) {
+        height: 657px;
+      }
+
+  &__content_cover {
+      
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      
+      padding: 72px 26px 37px 26px;
+    
+
+        @media screen and (min-width: $bp-desktop) {
+            align-items: flex-start;
+              background: linear-gradient(89deg,
+                  #fff 30.62%,
+                  rgba(255, 255, 255, 0.85) 41.31%,
+                  rgba(255, 255, 255, 0.19) 58.65%,
+                  rgba(255, 255, 255, 0) 72.78%);
+                  padding: 120px 666px 126px 244px;
+                  height: 657px;
+          }
+    }
+  
+    &__main_title {
+      font-size: var(--main-font-size);
+      font-weight: var(--main-font-weight);
+      margin-bottom: 16px;
+
+          @media screen and (min-width: $bp-desktop) {
+            font-size: 12px;
+          }
+      
+    }
+  
+    &__big_title {
+      font-family: Play;
+      font-size: 54px;
+        line-height: 1.17;
+      font-weight: 700;
+      text-transform: capitalize;
+      margin-bottom: 32px;
+
+      @media screen and (min-width: $bp-desktop) {
+          font-size: 140px;
+          line-height: 1.22;
+          margin-bottom: 40px;
+        }
+    }
+  
+    &__btn {
+      font-size: 16px;
+      padding: 16px 24px;
+      margin-bottom: 8x;
+
+        @media screen and (min-width: $bp-desktop) {
+          font-size: var(--main-font-size);
+            padding: 16px 32px;
+          margin-bottom: 14px;
+          }
+
+    }
+  
+    &__btn:hover,
+    &__btn:focus {
+      background-color: transparent;
+      border: 1px solid var(--main-color-brand-blue);
+      color: black;
+    }
+  
+    &__description {
+      font-size: 11px;
+      line-height: 1.6;
+      max-width: 186px;
+      text-align: center;
+
+      @media screen and (min-width: $bp-desktop) {
+          font-size: 12px;
+          line-height: 1.5;
+            max-width: 238px;
+           
+
+        }
+    }
+}
+

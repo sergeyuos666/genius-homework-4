@@ -1,0 +1,95 @@
+/* modal */
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+  z-index: 2;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.modal_windows {
+  position: relative;
+  max-width: 523px;
+  padding: 32px 84px;
+  padding-top: 130px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 32px;
+  background: var(--fourth-color-brand-black_blue, #011c44);
+  margin: 0 auto;
+
+  @media screen and (min-width: $bp-desktop) {
+      max-width: 723px;
+        padding: 42px 144px;
+    }
+
+        &__title {
+          text-align: center;
+          font-size: 32px;
+          color: var(--third-color-brand-white);
+          font-weight: 700;
+    
+          @media screen and (min-width: $bp-desktop) {
+            font-size: 64px;
+            font-weight: 600;
+          }
+    
+        }
+
+      &__form_title {
+        
+                  color: var(--third-color-brand-white);
+                  font-size: 18px;
+                  font-weight: 500;
+        
+                  @media screen and (min-width: $bp-desktop) {
+                    font-size: 22px;
+                    font-weight: 600;
+                  }
+                }
+
+                                &__btn_close {
+                                  position: absolute;
+                                  top: 42px;
+                                  right: 42px;
+                                  width: 32px;
+                                  height: 32px;
+                                  background: none;
+                                  border: none;
+                                  color: var(--third-color-brand-white);
+                                  background-image: url(./img/img_for_body/closesvg.svg);
+                                  background-repeat: no-repeat;
+                                  background-size: contain;
+                
+                                }
+
+                    &__form_btn{
+                      padding: 16px 24px;
+                      font-size: 16px;
+                      @media screen and (min-width: $bp-desktop) {
+                          padding: 16px 32px;
+                          font-size: 18px;
+                        }
+                    }
+}
+
+
+
+
+
+
+
